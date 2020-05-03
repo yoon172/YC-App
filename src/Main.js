@@ -1,14 +1,18 @@
-import React, {useEffect} from 'react';
-import TopBar from "./Components/TopBar";
+import React from 'react';
+import TopBar from "./Desktop Components/TopBar";
 import makeStyles from "@material-ui/core/styles/makeStyles";
 import Grid from "@material-ui/core/Grid";
-import Profile from "./Components/Profile";
-import Background from "./Components/Background";
-import About from "./Components/About";
+import Profile from "./Desktop Components/Profile";
+import Background from "./Desktop Components/Background";
+import About from "./Desktop Components/About";
 import FadeIn from 'react-fade-in';
-import Typography from "@material-ui/core/Typography";
-import Contact from "./Components/Contact";
-import Resume from "./Components/Resume";
+import Contact from "./Desktop Components/Contact";
+import Resume from "./Desktop Components/Resume";
+import Github from "./Images/github.png"
+import LinkedIn from "./Images/linkedin.png"
+import Email from "./Images/email.png"
+import Facebook from "./Images/facebook.svg"
+
 const useStyles = makeStyles(theme => ({
     root: {
         flexGrow: 1,
@@ -18,16 +22,16 @@ const useStyles = makeStyles(theme => ({
         justifyContent:'center',
         width:'100%',
         [theme.breakpoints.down("xl")]: {
-            paddingTop:'10em',
+            paddingTop:'9em',
         },
         [theme.breakpoints.down("lg")]: {
-            paddingTop:'7em',
-        },
-        [theme.breakpoints.down("sm")]: {
             paddingTop:'6em',
         },
+        [theme.breakpoints.down("sm")]: {
+            paddingTop:'5em',
+        },
         [theme.breakpoints.down("xs")]: {
-            paddingTop:'4em',
+            paddingTop:'3em',
         }
     },
     gridContainerStyle: {
@@ -35,7 +39,6 @@ const useStyles = makeStyles(theme => ({
     },
     aboutMeContainer: {
         backgroundColor: '#343536',
-        height:'40vh',
     },
     aboutMeBio: {
         color:'white',
@@ -43,51 +46,47 @@ const useStyles = makeStyles(theme => ({
     },
     contactMeContainer: {
         backgroundColor: '#343536',
-        height:'30vh',
         color:'white',
-        [theme.breakpoints.down("lg")]: {
-            height:'40vh',
-        },
-        [theme.breakpoints.down("md")]: {
-            height:'45vh',
-        },
-        [theme.breakpoints.down("sm")]: {
-            height:'65vh',
-        },
     },
     contactMe: {
         paddingLeft:'1em',
         padding:'5%',
         paddingTop:'1%',
-        marginTop: '10%',
-/*        [theme.breakpoints.down("lg")]: {
-            marginTop:'3em'
-        },
-        [theme.breakpoints.down("md")]: {
-            marginTop:'3em'
-        },
-        [theme.breakpoints.down("sm")]: {
-            marginTop:'-3em'
-        },
-        [theme.breakpoints.down("xs")]: {
-            marginTop:'8em'
-        },*/
     },
     downloadResume: {
         padding:'5%',
         paddingTop:'1%',
-        [theme.breakpoints.down("lg")]: {
-            marginTop:'3em'
-        },
+    },
+    iconGHEM: {
+        minWidth:  '100px',
+        minHeight: '100px',
+        maxWidth:'25%',
+    },
+    iconLI: {
+        minWidth:  '100px',
+        minHeight: '100px',
+        maxWidth:'25%',
+        transform: 'scale(1.5)'
+    },
+    iconFB: {
+        minWidth:  '100px',
+        minHeight: '100px',
+        maxWidth:'25%',
+        transform: 'scale(2)'
+    },
+    iconContainer : {
+        backgroundColor: '#343536',
+        height: '30vh',
+        maxWidth:'60%',
         [theme.breakpoints.down("md")]: {
-            marginTop:'3em'
+            maxWidth:'80%',
         },
         [theme.breakpoints.down("sm")]: {
-            marginTop:'-3em'
+            maxWidth:'100%',
         },
-/*        [theme.breakpoints.down("xs")]: {
-            marginTop:'8em'
-        },*/
+        [theme.breakpoints.down("xs")]: {
+            maxWidth:'100%',
+        }
     }
 }));
 
@@ -127,7 +126,25 @@ const Main = () => {
                 </Grid>
             </Grid>
 
+            <div style={{textAlign: 'center', width:'100%', display:'flex', justifyContent:'center', backgroundColor: '#343536',}}>
+            <Grid container alignItems={"flex-start"} justify={"space-between"} direction={'row'} className={classes.iconContainer}>
+                <Grid item xs={6} sm={3} md={3} lg={3} >
+                    <img src={Facebook} alt={"Facebook"} className={classes.iconFB}/>
+                </Grid>
+                <Grid item xs={6} sm={3} md={3} lg={3} >
+                   <img src={Github} alt={"Github"} className={classes.iconGHEM}/>
+                </Grid>
+                <Grid item xs={6} sm={3} md={3} lg={3}>
+                    <img src={LinkedIn} alt={"LinkedIn"} className={classes.iconLI}/>
+                </Grid>
+                <Grid item xs={6} sm={3} md={3} lg={3}>
+                    <img src={Email} alt={"Email"} className={classes.iconGHEM}/>
+                </Grid>
+            </Grid>
+            </div>
         </div>
+
+
 
     );
 };

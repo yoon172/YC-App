@@ -30,17 +30,19 @@ const styles = theme => ({
     }
 });
 
+//handleMenuClick
+
 const AppBarCollapse = props => (
     <div className={props.classes.root}>
         <ButtonAppBarCollapse>
-            <MenuItem>About Me</MenuItem>
-            <MenuItem>Resume/Experiences</MenuItem>
-            <MenuItem>Contact Me</MenuItem>
+            <MenuItem onClick={event =>  window.open('https://github.com/yoon172', '_blank')}  >Github</MenuItem>
+            <MenuItem onClick={event =>  window.open('https://www.linkedin.com/in/yoon172/', '_blank')} target="_blank" >LinkedIn</MenuItem>
+            <MenuItem onClick={event =>  window.open("mailto:yoon172@gmail.com")}  >Contact Me</MenuItem>
         </ButtonAppBarCollapse>
         <div className={props.classes.buttonBar} id="appbar-collapse">
-            <Button color="inherit">About Me</Button>
-            <Button color="inherit">Resume/Experiences</Button>
-            <Button color="inherit">Contact Me</Button>
+            <Button href={'https://github.com/yoon172'} target="_blank" color="inherit">Github</Button>
+            <Button href={'https://www.linkedin.com/in/yoon172/'} target="_blank" color="inherit">LinkedIn</Button>
+            <Button href={"mailto:yoon172@gmail.com"} color="inherit">Contact Me</Button>
         </div>
     </div>
 );

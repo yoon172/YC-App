@@ -2,20 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7e9d75b6-5bc5-4b92-93b1-ce2c30d80ff7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Components/About.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Components/AppBarCollapse.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Components/Background.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Components/ButtonAppBarCollapse.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Components/Contact.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Components/Profile.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Components/Resume.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Components/TopBar.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Main.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/About.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Desktop Components/About.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/AppBarCollapse.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Desktop Components/AppBarCollapse.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Background.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Desktop Components/Background.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/ButtonAppBarCollapse.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Desktop Components/ButtonAppBarCollapse.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Contact.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Desktop Components/Contact.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Profile.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Desktop Components/Profile.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Resume.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Desktop Components/Resume.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/TopBar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Desktop Components/TopBar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -106,7 +104,12 @@
       <workItem from="1588010672977" duration="7241000" />
       <workItem from="1588036018878" duration="4106000" />
       <workItem from="1588182501355" duration="601000" />
-      <workItem from="1588365263578" duration="4132000" />
+      <workItem from="1588365263578" duration="6095000" />
+      <workItem from="1588462752096" duration="612000" />
+      <workItem from="1588463992790" duration="420000" />
+      <workItem from="1588464463627" duration="5810000" />
+      <workItem from="1588478788965" duration="5230000" />
+      <workItem from="1588536840860" duration="2567000" />
     </task>
     <servers />
   </component>

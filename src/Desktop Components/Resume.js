@@ -7,7 +7,7 @@ const useStyles = makeStyles(theme => ({
     headerTitle: {
         color:'#FFF7EB',
         [theme.breakpoints.down("sm")]: {
-            fontSize:'1.5em'
+            fontSize:'1.3em'
         }
     },
 }));
@@ -20,8 +20,7 @@ const Resume = () => {
                 Resume
             </Typography>
             <br/>
-            <Button variant="contained" color="primary">
-
+            <Button href={'https://drive.google.com/file/d/1kC1ftso1FGl-2oJa7NIhpP9wNnqKr91b/view?usp=sharing'} variant="contained" color="primary">
                 Download Resume
             </Button>
         </>

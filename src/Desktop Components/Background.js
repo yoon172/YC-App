@@ -14,6 +14,8 @@ const useStyles = makeStyles((theme) => ({
         width:'200vw', //200vh
         position:'absolute',
         zIndex:'-1',
+        minWidth:'200vw',
+        minHeight:'100vh',
         [theme.breakpoints.down("xs")]: {
 
         },

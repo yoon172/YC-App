@@ -6,7 +6,7 @@ const useStyles = makeStyles((theme) => ({
     headerTitle: {
         color:'#FFF7EB',
         [theme.breakpoints.down("sm")]: {
-            fontSize:'1.5em'
+            fontSize:'1.3em'
         }
     },
     headerDescription : {
