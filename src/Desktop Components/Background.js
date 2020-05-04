@@ -1,33 +1,30 @@
 import React from 'react';
 import makeStyles from "@material-ui/core/styles/makeStyles";
 import introImage from '../Images/mountain.jpeg';
+import Profile from "./Profile";
 
 
 const useStyles = makeStyles((theme) => ({
     backgroundDiv: {
-        backgroundRepeat: 'no-repeat',
-        backgroundPosition: 'top center',
-        margin:'auto',
-        display:'block',
         maxWidth:'100%',
-        height: '100vh', //97vh
-        width:'200vw', //200vh
-        position:'absolute',
+        width:'100%',
         zIndex:'-1',
-        minWidth:'200vw',
         minHeight:'100vh',
-        [theme.breakpoints.down("xs")]: {
-
-        },
+        backgroundImage:`url(${introImage})`,
+        backgroundRepeat:'no-repeat',
+        backgroundSize:'100% 100%',
+        padding:'1em',
+        position:'relative',
+        textAlign:'center',
     }
 }));
 
 const Background = () => {
     const classes = useStyles();
     return(
-        <>
-            <img className={classes.backgroundDiv} src={introImage} alt={'UWMadison'}/>
-            </>
+        <div className={classes.backgroundDiv}>
+            <Profile />
+        </div>
     )
 };
 

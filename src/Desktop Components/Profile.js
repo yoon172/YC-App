@@ -11,6 +11,12 @@ const useStyles = makeStyles((theme) => ({
             transform:'scale(0.7,0.7)'
         },
     },
+    profileDiv: {
+        position: 'relative',
+        verticalAlign: 'middle',
+        display: 'inline-block',
+        marginTop:'8em'
+    },
     nameIntro: {
         [theme.breakpoints.down("sm")]: {
             fontSize:'2em',
@@ -24,14 +30,14 @@ const useStyles = makeStyles((theme) => ({
             fontSize:'1em'
         },
         color:'white',
-        paddingTop:'1em'
+        paddingTop:'1em',
     },
     degreeIntro: {
         [theme.breakpoints.down("sm")]: {
             fontSize:'1em'
         },
         paddingTop:'1em',
-        color:'white'
+        color:'white',
     }
 }));
 
@@ -39,10 +45,9 @@ export default function MediaCard() {
     const classes = useStyles();
 
     return (
-    <>
-        <img className={classes.root} src={profileImage} alt={'UWMadison'}/>
-        <div>
-        <Typography variant={"h4"} className={classes.nameIntro}>
+        <div className={classes.profileDiv}>
+            <img className={classes.root} src={profileImage} alt={'UWMadison'}/>
+            <Typography variant={"h4"} className={classes.nameIntro}>
             Yoon Cho
         </Typography>
         <Typography variant={"h6"} className={classes.universityIntro}>
@@ -52,6 +57,5 @@ export default function MediaCard() {
                 B.S Computer Science '20
             </Typography>
         </div>
-            </>
     );
 }

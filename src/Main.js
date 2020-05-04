@@ -2,7 +2,6 @@ import React from 'react';
 import TopBar from "./Desktop Components/TopBar";
 import makeStyles from "@material-ui/core/styles/makeStyles";
 import Grid from "@material-ui/core/Grid";
-import Profile from "./Desktop Components/Profile";
 import Background from "./Desktop Components/Background";
 import About from "./Desktop Components/About";
 import FadeIn from 'react-fade-in';
@@ -11,7 +10,7 @@ import Resume from "./Desktop Components/Resume";
 import Github from "./Images/github.png"
 import LinkedIn from "./Images/linkedin.png"
 import Email from "./Images/email.png"
-import Facebook from "./Images/facebook.svg"
+import Facebook from "./Images/facebook.png"
 
 const useStyles = makeStyles(theme => ({
     root: {
@@ -61,18 +60,41 @@ const useStyles = makeStyles(theme => ({
         minWidth:  '100px',
         minHeight: '100px',
         maxWidth:'25%',
+        '&:hover': {
+            borderRadius: '50%',
+            color: 'rgba(0, 0, 0, 0.3)',
+            boxShadow: '.1em .1em 3em  rgba(200, 200, 200, 0.5)',
+        },
+        [theme.breakpoints.down("sm")]: {
+            minWidth:  '70px',
+            minHeight: '70px',
+        },
     },
     iconLI: {
         minWidth:  '100px',
         minHeight: '100px',
         maxWidth:'25%',
-        transform: 'scale(1.5)'
+        '&:hover': {
+            color: 'rgba(0, 0, 0, 0.3)',
+            boxShadow: '.1em .1em 3em  rgba(200, 200, 200, 0.5)',
+        },
+        [theme.breakpoints.down("sm")]: {
+            minWidth:  '70px',
+            minHeight: '70px',
+        },
     },
     iconFB: {
         minWidth:  '100px',
         minHeight: '100px',
         maxWidth:'25%',
-        transform: 'scale(2)'
+        '&:hover': {
+            color: 'rgba(0, 0, 0, 0.3)',
+            boxShadow: '.1em .1em 3em rgba(200, 200, 200, 0.5)',
+        },
+        [theme.breakpoints.down("sm")]: {
+            minWidth:  '70px',
+            minHeight: '70px',
+        },
     },
     iconContainer : {
         backgroundColor: '#343536',
@@ -100,17 +122,7 @@ const Main = () => {
 
         <div className="App">
             <TopBar/>
-
-            <Grid container direction={"column"} className={classes.gridContainerStyle}>
-                <Grid >
-                    <Background /> {/*Background Picture*/}
-                </Grid>
-                <FadeIn>
-                <div className={classes.introProfile}>
-                    <Profile /> {/*Profile headshot photo and Name typography*/}
-                </div>
-                </FadeIn>
-            </Grid>
+            <Background/>
             <Grid container alignItems={"center"} justify={"flex-start"} direction={'column'} className={classes.aboutMeContainer}>
                 <Grid className={classes.aboutMeBio} item xs={12} sm={11} md={9} lg={7}>
                     <About/> {/*About Me Description Section*/}
@@ -129,16 +141,16 @@ const Main = () => {
             <div style={{textAlign: 'center', width:'100%', display:'flex', justifyContent:'center', backgroundColor: '#343536',}}>
             <Grid container alignItems={"flex-start"} justify={"space-between"} direction={'row'} className={classes.iconContainer}>
                 <Grid item xs={6} sm={3} md={3} lg={3} >
-                    <img src={Facebook} alt={"Facebook"} className={classes.iconFB}/>
+                    <img onClick={event =>  window.open('https://www.facebook.com/yoon.cho.12', '_blank')} src={Facebook} alt={"Facebook"} className={classes.iconFB}/>
                 </Grid>
                 <Grid item xs={6} sm={3} md={3} lg={3} >
-                   <img src={Github} alt={"Github"} className={classes.iconGHEM}/>
+                   <img onClick={event =>  window.open('https://github.com/yoon172', '_blank')} src={Github} alt={"Github"} className={classes.iconGHEM}/>
                 </Grid>
                 <Grid item xs={6} sm={3} md={3} lg={3}>
-                    <img src={LinkedIn} alt={"LinkedIn"} className={classes.iconLI}/>
+                    <img onClick={event =>  window.open('https://www.linkedin.com/in/yoon172/', '_blank')} src={LinkedIn} alt={"LinkedIn"} className={classes.iconLI}/>
                 </Grid>
                 <Grid item xs={6} sm={3} md={3} lg={3}>
-                    <img src={Email} alt={"Email"} className={classes.iconGHEM}/>
+                    <img onClick={event =>  window.open("mailto:yoon172@gmail.com")} src={Email} alt={"Email"} className={classes.iconGHEM}/>
                 </Grid>
             </Grid>
             </div>
