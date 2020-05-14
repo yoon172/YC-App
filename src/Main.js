@@ -119,7 +119,6 @@ const Main = () => {
     const classes = useStyles();
 
     return (
-
         <div className="App">
             <TopBar/>
             <Background/>
@@ -141,23 +140,20 @@ const Main = () => {
             <div style={{textAlign: 'center', width:'100%', display:'flex', justifyContent:'center', backgroundColor: '#343536',}}>
             <Grid container alignItems={"flex-start"} justify={"space-between"} direction={'row'} className={classes.iconContainer}>
                 <Grid item xs={6} sm={3} md={3} lg={3} >
-                    <img onClick={event =>  window.open('https://www.facebook.com/yoon.cho.12', '_blank')} src={Facebook} alt={"Facebook"} className={classes.iconFB}/>
+                    <img onClick={event =>  window.open('https://www.facebook.com/yoon.cho.12', '_blank')} style={{cursor: 'pointer'}} src={Facebook} alt={"Facebook"} className={classes.iconFB}/>
                 </Grid>
                 <Grid item xs={6} sm={3} md={3} lg={3} >
-                   <img onClick={event =>  window.open('https://github.com/yoon172', '_blank')} src={Github} alt={"Github"} className={classes.iconGHEM}/>
+                   <img onClick={event =>  window.open('https://github.com/yoon172', '_blank')} style={{cursor: 'pointer'}} src={Github} alt={"Github"} className={classes.iconGHEM}/>
                 </Grid>
                 <Grid item xs={6} sm={3} md={3} lg={3}>
-                    <img onClick={event =>  window.open('https://www.linkedin.com/in/yoon172/', '_blank')} src={LinkedIn} alt={"LinkedIn"} className={classes.iconLI}/>
+                    <img onClick={event =>  window.open('https://www.linkedin.com/in/yoon172/', '_blank')} style={{cursor: 'pointer'}} src={LinkedIn} alt={"LinkedIn"} className={classes.iconLI}/>
                 </Grid>
                 <Grid item xs={6} sm={3} md={3} lg={3}>
-                    <img onClick={event =>  window.open("mailto:yoon172@gmail.com")} src={Email} alt={"Email"} className={classes.iconGHEM}/>
+                    <img onClick={event =>  window.open("mailto:yoon172@gmail.com")} src={Email} style={{cursor: 'pointer'}} alt={"Email"} className={classes.iconGHEM}/>
                 </Grid>
             </Grid>
             </div>
         </div>
-
-
-
     );
 };
 

@@ -26,7 +26,7 @@ const About = () => {
         </Typography>
         <Typography variant={"h6"} className={classes.headerDescription}>
             <br/>
-            Currently a senior studying computer science at the University of Wisconsin-Madison.
+            Currently a recent grad with a B.S for Computer Science at the University of Wisconsin-Madison.
             As a emerging entry level developer, I am interested in different technologies and how they can be used in the advancement of several industries.
             My primary interests are full stack web technologies. I'm hoping to challenge myself with new and pragmatic technologies used and adapted in industry.
             <br/>

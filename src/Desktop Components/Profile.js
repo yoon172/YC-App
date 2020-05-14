@@ -1,7 +1,7 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Typography from '@material-ui/core/Typography';
-import profileImage from '../Images/ProfilePicture4.jpg'
+import profileImage from '../Images/ProfilePicture3.jpg'
 
 const useStyles = makeStyles((theme) => ({
     root: {
