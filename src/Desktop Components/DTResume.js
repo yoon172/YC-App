@@ -20,11 +20,11 @@ const useStyles = makeStyles(theme => ({
     }
 }));
 
-const Resume = () => {
+const DTResume = () => {
     const classes = useStyles();
     return(
         <>
-            <Typography variant={"h5"} noWrap = 'true' className={classes.headerTitle}>
+            <Typography variant={"h5"} className={classes.headerTitle}> {/*noWrap = 'true'*/}
                 Resume
             </Typography>
             <br/>
@@ -36,4 +36,4 @@ const Resume = () => {
     )
 };
 
-export default Resume;
+export default DTResume;

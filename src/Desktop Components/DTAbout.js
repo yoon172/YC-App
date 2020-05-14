@@ -17,11 +17,11 @@ const useStyles = makeStyles((theme) => ({
     }
 }));
 
-const About = () => {
+const DTAbout = () => {
     const classes = useStyles();
     return(
         <>
-        <Typography variant={"h5"} noWrap = 'true' className={classes.headerTitle}>
+        <Typography variant={"h5"} className={classes.headerTitle}> {/*nowrap*/}
             About Me
         </Typography>
         <Typography variant={"h6"} className={classes.headerDescription}>
@@ -37,4 +37,4 @@ const About = () => {
     )
 };
 
-export default About;
+export default DTAbout;

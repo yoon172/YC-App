@@ -17,11 +17,11 @@ const useStyles = makeStyles((theme) => ({
     }
 }));
 
-const Contact = () => {
+const DTContact = () => {
     const classes = useStyles();
     return(
         <>
-            <Typography variant={"h5"} wrap className={classes.headerTitle}>
+            <Typography variant={"h5"}  className={classes.headerTitle}> {/*wrap*/}
                 Contact Information
             </Typography>
             <Typography variant={"h6"} className={classes.headerDescription}>
@@ -40,4 +40,4 @@ const Contact = () => {
     )
 };
 
-export default Contact;
+export default DTContact;

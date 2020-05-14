@@ -20,16 +20,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7e9d75b6-5bc5-4b92-93b1-ce2c30d80ff7" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/Desktop Components/DTBackground.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Desktop Components/DTTopBar.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/MediaQuery.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Mobile Components/MobileAbout.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Mobile Components/MobileContact.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Mobile Components/MobileProfile.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Mobile Components/MobileResume.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/MobileMain.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Desktop Components/About.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Desktop Components/About.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Desktop Components/Profile.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Desktop Components/Profile.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Images/ProfilePicture.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Images/ProfilePicture2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Images/ProfilePicture3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Images/UWMadison.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Images/facebook svg.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Images/mountain_old.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.test.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Desktop Components/About.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Desktop Components/DTAbout.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Desktop Components/AppBarCollapse.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Shared Components/AppBarCollapse.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Desktop Components/Background.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Mobile Components/MobileBackground.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Desktop Components/ButtonAppBarCollapse.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Shared Components/ButtonAppBarCollapse.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Desktop Components/Contact.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Desktop Components/DTContact.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Desktop Components/Profile.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Desktop Components/DTProfile.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Desktop Components/Resume.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Desktop Components/DTResume.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Desktop Components/TopBar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Mobile Components/MobileTopBar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/DTMain.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,8 +50,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="CSS File" />
         <option value="JavaScript File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -56,7 +67,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/Mobile Components" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -65,7 +76,11 @@
     <property name="nodejs_package_manager_path" value="yarn" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\yoon1\OneDrive\Code Files\personalwebsite\src\Mobile Components" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\yoon1\OneDrive\Code Files\personalwebsite\src\Shared Components" />
       <recent name="C:\Users\yoon1\OneDrive\Code Files\personalwebsite\src\Images" />
       <recent name="C:\Users\yoon1\OneDrive\Code Files\personalwebsite\src" />
     </key>
@@ -146,10 +161,11 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="690" y="286" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1584929287052">
-      <screen x="0" y="0" width="1920" height="1080" />
+    <state x="690" y="275" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1589490366074">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="690" y="286" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/-1509.1081.1500.1000/-1920.1.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1584929287052" />
+    <state x="690" y="275" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/765.1080.1504.976/0.0.1920.1040/1920.-1.1920.1040@0.0.1920.1040" timestamp="1589490366074" />
     <state x="740" y="283" key="FileChooserDialogImpl" timestamp="1586186474462">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

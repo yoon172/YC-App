@@ -8,14 +8,18 @@ const useStyles = makeStyles((theme) => ({
         maxWidth: '21em',
         borderRadius: '50%',
         [theme.breakpoints.down("sm")]: {
-            transform:'scale(0.7,0.7)'
+            transform:'scale(0.6,0.6)'
+        },
+        [theme.breakpoints.up("md")]: {
+            transform:'scale(1,1)',
+            marginTop:'4em'
         },
     },
     profileDiv: {
         position: 'relative',
         verticalAlign: 'middle',
         display: 'inline-block',
-        marginTop:'8em'
+        marginTop:'8%',
     },
     nameIntro: {
         [theme.breakpoints.down("sm")]: {
@@ -48,11 +52,11 @@ export default function MediaCard() {
         <div className={classes.profileDiv}>
             <img className={classes.root} src={profileImage} alt={'UWMadison'}/>
             <Typography variant={"h4"} className={classes.nameIntro}>
-            Yoon Cho
-        </Typography>
-        <Typography variant={"h6"} className={classes.universityIntro}>
-            University of Wisconsin-Madison<br/>
-        </Typography>
+             Yoon Cho
+            </Typography>
+            <Typography variant={"h6"} className={classes.universityIntro}>
+                University of Wisconsin-Madison<br/>
+            </Typography>
             <Typography variant={"subtitle1"} className={classes.degreeIntro}>
                 B.S Computer Science '20
             </Typography>

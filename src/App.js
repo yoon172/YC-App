@@ -1,10 +1,10 @@
 import React from 'react';
-import Main from "./Main";
+import MediaQuery from "./MediaQuery";
 
 function App() {
     return (
     <div className="App">
-        <Main/>
+        <MediaQuery/>
     </div>
   );
 }

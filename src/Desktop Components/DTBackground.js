@@ -1,7 +1,8 @@
 import React from 'react';
 import makeStyles from "@material-ui/core/styles/makeStyles";
 import introImage from '../Images/mountain.jpeg';
-import Profile from "./Profile";
+import Profile from "./DTProfile";
+import FadeIn from 'react-fade-in';
 
 
 const useStyles = makeStyles((theme) => ({
@@ -13,19 +14,20 @@ const useStyles = makeStyles((theme) => ({
         backgroundImage:`url(${introImage})`,
         backgroundRepeat:'no-repeat',
         backgroundSize:'100% 100%',
-        padding:'1em',
         position:'relative',
         textAlign:'center',
     }
 }));
 
-const Background = () => {
+const DTBackground = () => {
     const classes = useStyles();
     return(
         <div className={classes.backgroundDiv}>
+            <FadeIn>
             <Profile />
+            </FadeIn>
         </div>
     )
 };
 
-export default Background;
+export default DTBackground;

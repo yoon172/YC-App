@@ -1,12 +1,11 @@
 import React from 'react';
-import TopBar from "./Desktop Components/TopBar";
+import DTTopBar from "./Mobile Components/MobileTopBar";
 import makeStyles from "@material-ui/core/styles/makeStyles";
 import Grid from "@material-ui/core/Grid";
-import Background from "./Desktop Components/Background";
-import About from "./Desktop Components/About";
-import FadeIn from 'react-fade-in';
-import Contact from "./Desktop Components/Contact";
-import Resume from "./Desktop Components/Resume";
+import DTBackground from "./Mobile Components/MobileBackground";
+import DTAbout from "./Mobile Components/MobileAbout";
+import DTContact from "./Mobile Components/MobileContact";
+import DTResume from "./Mobile Components/MobileResume";
 import Github from "./Images/github.png"
 import LinkedIn from "./Images/linkedin.png"
 import Email from "./Images/email.png"
@@ -20,12 +19,6 @@ const useStyles = makeStyles(theme => ({
         textAlign:'center',
         justifyContent:'center',
         width:'100%',
-        [theme.breakpoints.down("xl")]: {
-            paddingTop:'9em',
-        },
-        [theme.breakpoints.down("lg")]: {
-            paddingTop:'6em',
-        },
         [theme.breakpoints.down("sm")]: {
             paddingTop:'5em',
         },
@@ -100,61 +93,54 @@ const useStyles = makeStyles(theme => ({
         backgroundColor: '#343536',
         height: '30vh',
         maxWidth:'60%',
-        [theme.breakpoints.down("md")]: {
-            maxWidth:'80%',
+        [theme.breakpoints.up("md")]: {
+            maxWidth:'70%',
         },
         [theme.breakpoints.down("sm")]: {
             maxWidth:'100%',
         },
-        [theme.breakpoints.down("xs")]: {
-            maxWidth:'100%',
-        }
     }
 }));
 
 
-
-
-const Main = () => {
+const MobileMain = () => {
     const classes = useStyles();
-
     return (
-        <div className="App">
-            <TopBar/>
-            <Background/>
+        <div className="App" >
+            <DTTopBar/>
+            <DTBackground/>
             <Grid container alignItems={"center"} justify={"flex-start"} direction={'column'} className={classes.aboutMeContainer}>
                 <Grid className={classes.aboutMeBio} item xs={12} sm={11} md={9} lg={7}>
-                    <About/> {/*About Me Description Section*/}
+                    <DTAbout/> {/*MobileAbout Me Description Section*/}
                 </Grid>
             </Grid>
-
             <Grid container alignItems={"baseline"} justify={"center"} direction={'row'} className={classes.contactMeContainer}>
                 <Grid className={classes.contactMe} item xs={6} sm={5} md={4} lg={3}>
-                    <Contact/> {/*Contact information*/}
+                    <DTContact/> {/*MobileContact information*/}
                 </Grid>
                 <Grid className={classes.downloadResume} item xs={6} sm={5} md={4} lg={3}>
-                    <Resume/>
+                    <DTResume/>
                 </Grid>
             </Grid>
 
             <div style={{textAlign: 'center', width:'100%', display:'flex', justifyContent:'center', backgroundColor: '#343536',}}>
-            <Grid container alignItems={"flex-start"} justify={"space-between"} direction={'row'} className={classes.iconContainer}>
-                <Grid item xs={6} sm={3} md={3} lg={3} >
-                    <img onClick={event =>  window.open('https://www.facebook.com/yoon.cho.12', '_blank')} style={{cursor: 'pointer'}} src={Facebook} alt={"Facebook"} className={classes.iconFB}/>
+                <Grid container alignItems={"flex-start"} justify={"space-between"} direction={'row'} className={classes.iconContainer}>
+                    <Grid item xs={6} sm={3} md={3} lg={3} >
+                        <img onClick={event =>  window.open('https://www.facebook.com/yoon.cho.12', '_blank')} style={{cursor: 'pointer'}} src={Facebook} alt={"Facebook"} className={classes.iconFB}/>
+                    </Grid>
+                    <Grid item xs={6} sm={3} md={3} lg={3} >
+                        <img onClick={event =>  window.open('https://github.com/yoon172', '_blank')} style={{cursor: 'pointer'}} src={Github} alt={"Github"} className={classes.iconGHEM}/>
+                    </Grid>
+                    <Grid item xs={6} sm={3} md={3} lg={3}>
+                        <img onClick={event =>  window.open('https://www.linkedin.com/in/yoon172/', '_blank')} style={{cursor: 'pointer'}} src={LinkedIn} alt={"LinkedIn"} className={classes.iconLI}/>
+                    </Grid>
+                    <Grid item xs={6} sm={3} md={3} lg={3}>
+                        <img onClick={event =>  window.open("mailto:yoon172@gmail.com")} src={Email} style={{cursor: 'pointer'}} alt={"Email"} className={classes.iconGHEM}/>
+                    </Grid>
                 </Grid>
-                <Grid item xs={6} sm={3} md={3} lg={3} >
-                   <img onClick={event =>  window.open('https://github.com/yoon172', '_blank')} style={{cursor: 'pointer'}} src={Github} alt={"Github"} className={classes.iconGHEM}/>
-                </Grid>
-                <Grid item xs={6} sm={3} md={3} lg={3}>
-                    <img onClick={event =>  window.open('https://www.linkedin.com/in/yoon172/', '_blank')} style={{cursor: 'pointer'}} src={LinkedIn} alt={"LinkedIn"} className={classes.iconLI}/>
-                </Grid>
-                <Grid item xs={6} sm={3} md={3} lg={3}>
-                    <img onClick={event =>  window.open("mailto:yoon172@gmail.com")} src={Email} style={{cursor: 'pointer'}} alt={"Email"} className={classes.iconGHEM}/>
-                </Grid>
-            </Grid>
             </div>
         </div>
     );
 };
 
-export default Main;
+export default MobileMain;

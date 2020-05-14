@@ -3,7 +3,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
-import AppBarCollapse from "./AppBarCollapse";
+import AppBarCollapse from "../Shared Components/AppBarCollapse";
 
 
 const useStyles = makeStyles((theme) => ({
@@ -36,7 +36,7 @@ const useStyles = makeStyles((theme) => ({
 
 
 
-const TopBar = () => {
+const MobileTopBar = () => {
     const classes = useStyles();
     return(
         <AppBar position="static" color="default" elevation={0} className={classes.appBar}>
@@ -50,4 +50,4 @@ const TopBar = () => {
     )
 };
 
-export default TopBar;
+export default MobileTopBar;
