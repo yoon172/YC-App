@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/YC-App/static/css/main.9e846746.chunk.css",
+    "main.js": "/YC-App/static/js/main.9b955e8e.chunk.js",
+    "main.js.map": "/YC-App/static/js/main.9b955e8e.chunk.js.map",
+    "runtime-main.js": "/YC-App/static/js/runtime-main.3233149b.js",
+    "runtime-main.js.map": "/YC-App/static/js/runtime-main.3233149b.js.map",
+    "static/js/2.c6077cf0.chunk.js": "/YC-App/static/js/2.c6077cf0.chunk.js",
+    "static/js/2.c6077cf0.chunk.js.map": "/YC-App/static/js/2.c6077cf0.chunk.js.map",
+    "index.html": "/YC-App/index.html",
+    "precache-manifest.dd7cb0e8b7754a80ecd74e7d7f3a9c61.js": "/YC-App/precache-manifest.dd7cb0e8b7754a80ecd74e7d7f3a9c61.js",
+    "service-worker.js": "/YC-App/service-worker.js",
+    "static/css/main.9e846746.chunk.css.map": "/YC-App/static/css/main.9e846746.chunk.css.map",
+    "static/js/2.c6077cf0.chunk.js.LICENSE.txt": "/YC-App/static/js/2.c6077cf0.chunk.js.LICENSE.txt",
+    "static/media/ProfilePicture3.jpg": "/YC-App/static/media/ProfilePicture3.2bff61c9.jpg",
+    "static/media/mountain.jpeg": "/YC-App/static/media/mountain.63d66d3d.jpeg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.3233149b.js",
+    "static/js/2.c6077cf0.chunk.js",
+    "static/css/main.9e846746.chunk.css",
+    "static/js/main.9b955e8e.chunk.js"
+  ]
+}
